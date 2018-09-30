@@ -17,6 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.UiDemoActivity" />
+        <activity android:name=".ui.EmojiDemoActivity" />
+        <activity android:name=".ui.NotificationDemoActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppBar.DemoTheme"/>
+        <activity android:name=".ui.viewpager.ViewPagerDemoActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

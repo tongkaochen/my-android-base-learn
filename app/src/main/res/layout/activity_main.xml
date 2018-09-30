@@ -8,28 +8,52 @@
 
     <Button
         android:id="@+id/demo_ui"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/demo_animation"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:layout_constraintHorizontal_chainStyle="packed"
         android:textAllCaps="false"
         android:text="Ui demo"/>
+
     <Button
         android:id="@+id/demo_animation"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
         android:text="Animation demo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/demo_ui"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@id/demo_ui" />
 
+    <Button
+        android:id="@+id/demo_emoji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emoji demo"
+        android:textAllCaps="false"
+        android:theme="?android:attr/borderlessButtonStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_animation" />
+    <Button
+        android:id="@+id/demo_notif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification demo"
+        android:textAllCaps="false"
+        android:theme="?android:attr/borderlessButtonStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_emoji" />
+    <Button
+        android:id="@+id/demo_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View pager demo"
+        android:textAllCaps="false"
+        android:theme="?android:attr/borderlessButtonStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_notif" />
 </android.support.constraint.ConstraintLayout>

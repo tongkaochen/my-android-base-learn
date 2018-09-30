@@ -1,10 +1,11 @@
 package com.tifone.android.learn.ui
 
 import android.os.Bundle
+import android.os.StatFs
+import android.support.v4.widget.TextViewCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.GestureDetector
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,6 +42,7 @@ class UiDemoActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
             holder.textView.text = mDataSet[position]
+            TextViewCompat.setAutoSizeTextTypeWithDefaults(holder.textView, TextViewCompat.AUTO_SIZE_TEXT_TYPE_UNIFORM)
         }
 
         /*        class MyViewHolder : RecyclerView.ViewHolder {

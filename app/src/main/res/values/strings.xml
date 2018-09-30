@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">my-android-base-learn</string>
+    <string name="big_text">val bitmap = BitmapFactory.decodeResource(resources, R.drawable.pic)
+        val builder = NotificationCompat.Builder(this, NOTIFICATION_DEMO_CHANNEL_ID).apply {
+            setContentTitle("A expandable notification")
+            setContentText("Expandable notification body text")
+            setSmallIcon(R.drawable.ic_control_notif)
+            setLargeIcon(bitmap)
+            setStyle(NotificationCompat.BigPictureStyle().bigPicture(bitmap).bigLargeIcon(null))
+            setStyle(NotificationCompat.BigTextStyle().bigText(getString(R.string.big_text)))
+        }
+        return builder.build()</string>
 </resources>
