@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.tifone.android.learn.drawable.DrawableDemoActivity
+import com.tifone.android.learn.opengl.OpenGLES20DemoActivity
 import com.tifone.android.learn.ui.EmojiDemoActivity
 import com.tifone.android.learn.ui.NotificationDemoActivity
 import com.tifone.android.learn.ui.UiDemoActivity
@@ -21,6 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<Button>(R.id.demo_emoji).setOnClickListener(this)
         findViewById<Button>(R.id.demo_notif).setOnClickListener(this)
         findViewById<Button>(R.id.demo_view_pager).setOnClickListener(this)
+        findViewById<Button>(R.id.demo_drawable).setOnClickListener(this)
+        findViewById<Button>(R.id.demo_opengl).setOnClickListener(this)
     }
     override fun onClick(v: View?) {
         when (v?.id) {
@@ -35,6 +39,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.demo_view_pager -> {
                 startDemoActivity(ViewPagerDemoActivity::class.java)
+            }
+            R.id.demo_drawable -> {
+                startDemoActivity(DrawableDemoActivity::class.java)
+            }
+            R.id.demo_opengl -> {
+                startDemoActivity(OpenGLES20DemoActivity::class.java)
             }
         }
     }

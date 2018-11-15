@@ -56,4 +56,24 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/demo_notif" />
+    <Button
+        android:id="@+id/demo_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawable demo"
+        android:textAllCaps="false"
+        android:theme="?android:attr/borderlessButtonStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_view_pager" />
+    <Button
+        android:id="@+id/demo_opengl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OpenGl 2.0 demo"
+        android:textAllCaps="false"
+        android:theme="?android:attr/borderlessButtonStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_drawable"/>
 </android.support.constraint.ConstraintLayout>

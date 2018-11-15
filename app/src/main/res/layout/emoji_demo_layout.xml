@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.text.emoji.widget.EmojiButton
+        android:id="@+id/emoji_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emoji button"/>
+    <android.support.text.emoji.widget.EmojiTextView
+        android:id="@+id/emoji_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.text.emoji.widget.EmojiEditText
+        android:id="@+id/emoji_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>
